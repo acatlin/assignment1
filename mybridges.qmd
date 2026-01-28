@@ -56,3 +56,25 @@ Source: <https://archive.ics.uci.edu/dataset/18/pittsburgh+bridges>
     -   Update with more recent bridge data
     -   Augment the data by getting latitudes and longitudes for each bridge and showing on a google map.
     -   Show an animation where the bridges are dynamically overlaid over time.
+
+```{r}
+# install.packages("tidyverse")
+# install.packages("gt")
+
+library(tidyverse)
+library(gt)
+
+url <- "https://raw.githubusercontent.com/acatlin/data/refs/heads/master/bridges_yearbuilt.csv"
+
+df <- read_csv(
+  file = url,
+  show_col_types = FALSE,
+  progress = FALSE
+)
+
+df2 <- df[df$material != "?", c("identif", "river", "erected", "material")]
+
+df2 |>
+  gt()
+```
+
