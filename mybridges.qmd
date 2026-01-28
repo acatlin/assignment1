@@ -1,0 +1,58 @@
+---
+title: "Assignment 1"
+author: "Andy Catlin"
+format: html
+editor: visual
+---
+
+## Assignment 1 - Pittsburgh Bridges
+
+## Approach:
+
+I'll start by creating a beachhead, where I pull down the CSV file from a folder in a public repo that I created, and dump the contents out using the gt() command.
+
+Source: <https://archive.ics.uci.edu/dataset/18/pittsburgh+bridges>
+
+### core deliverable
+
+-   For code, I'll create a "base R" program that fulfills the requirement deliverables to read data into, filter, subset, and then display a dataframe.
+
+### iterate with LLM to extend deliverable to:
+
+-   Convert the code to tidyverse
+-   EDA. Look at different choices for river. Use my domain knowledge to make a decision about the included Yough river.
+-   Feature engineering. Bin time up into before 1900 and 1900 and after.
+-   Ask and answer a question about Wooden Bridges vs. Metal Bridges over time.
+-   Include data source, map of Pittsburgh showing three rivers (and Yough)
+
+### Nice to haves (for later?):
+
+-   Update with more recent bridge data
+
+-   Augment the data by getting latitudes and longitudes for each bridge and showing on a google map.
+
+-   Show an animation where the bridges are dynamically overlaid over time.
+
+    ## Approach:
+
+    I'll start by creating a beachhead, where I pull down the CSV file from a folder in a public repo that I created, and dump the contents out using the gt() command.
+
+    Source: <https://archive.ics.uci.edu/dataset/18/pittsburgh+bridges>
+
+    ### core deliverable
+
+    -   For code, I'll create a "base R" program that fulfills the requirement deliverables to read data into, filter, subset, and then display a dataframe.
+
+    ### iterate with LLM to extend deliverable to:
+
+    -   Convert the code to tidyverse
+    -   EDA. Look at different choices for river. Use my domain knowledge to make a decision about the included Yough river.
+    -   Feature engineering. Bin time up into before 1900 and 1900 and after.
+    -   Ask and answer a question about Wooden Bridges vs. Metal Bridges over time.
+    -   Include data source, map of Pittsburgh showing three rivers (and Yough)
+
+    ### Nice to haves (for later?):
+
+    -   Update with more recent bridge data
+    -   Augment the data by getting latitudes and longitudes for each bridge and showing on a google map.
+    -   Show an animation where the bridges are dynamically overlaid over time.
